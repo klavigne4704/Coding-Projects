@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=KyleLavigne_Proj05
+comment0.text=\r\n\ This\ is\ a\ Mortgage\ calculator\ that\ will\ calculate\ your\ payments,\ total\ interest\ paid,\r\n\ makeup\ of\ your\ monthly\ payment,\ and\ your\ balance\ remaining.\r\n\ @Kyle\ Lavigne\r\n\ @9/24\r\n
+comment1.params=str
+comment1.target=void\ main(java.lang.String[])
+numComments=2

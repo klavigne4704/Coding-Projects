@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=KyleLavigne_Proj07
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ KyleLavigne_Proj07\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=arr
+comment1.target=void\ initializeArray(int[])
+comment2.params=arr\ key
+comment2.target=int\ linearSearch(int[],\ int)
+comment3.params=arr
+comment3.target=void\ selectSort(int[])
+comment4.params=arr
+comment4.target=void\ printArray(int[])
+comment5.params=arr
+comment5.target=int\ range(int[])
+comment6.params=arr
+comment6.target=int\ largest(int[])
+comment7.params=arr
+comment7.target=int\ smallest(int[])
+comment8.params=arr
+comment8.target=double\ average(int[])
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10
