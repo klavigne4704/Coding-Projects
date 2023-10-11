@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>C++ Code Showcase::Request Project</title>
+	<link href="final.css" rel="stylesheet">
+	<link href="print.css" media="print" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My C++ coding portfolie, about me, and what I charge as well as how to get in contact with me to purchase a program.">
+	<style>
+	form {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+@media (min-width: 600px) {
+			
+			form { width: 80%;
+				max-width: 30em;
+				display: grid;
+				grid-template-columns: 6em 1fr;
+				grid-gap: 1em; 
+			}
+}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="pagetop">
+			<h1><a href="final.html">Kyle Lavigne C++ Code Showcase</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="final.html">Home</a></li>
+				<li><a href="aboutme.html">About Me</a></li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Projects</a>
+					<div class="dropdown-content">
+						<a href="game.html">Sarcastic Text-Based Game</a>
+						<a href="histogram.html">Histogram</a>
+						<a href="shape.html">Shape</a>
+					</div>
+				</li>
+				<li><a href="rate.html">Commission Rate</a></li>
+				<li><a href="request.html">Project Request</a></li>
+			</ul>
+		</nav>
+		<main>
+			<form method="post" action="confirmation.html">
+				<label for="myFName">*First Name:</label>
+					<input type="text" id="myFName" name="myFName" required>
+				<label for="myLName">*Last Name:</label>
+					<input type="text" id="myLName" name="myLName" required>
+				<label for="myEmail">*Email Address:</label>
+					<input type="email" id="myEmail" name="myEmail" required>
+				<label for="myPhone">Phone Number:</label>
+					<input type="tel" id="myPhone" name="phone" maxlength="12">
+				<label for="myPackage">*Package Selection</label>
+					<input type="number" id="myPackage" name="myPackage" min="1" max="4" value="1" required>
+				<label for="myDetails">*Details of Project:</label>
+					<textarea id="myDetails" name="myDetails" rows="2" cols="30" required></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</main>
+		<br><br>
+		<footer>
+			<a href="#pagetop">Back to Top</a><br>
+			Contact Me<br>
+			<a href="mailto:kjlavigne@mail.fhsu.edu">kjlavigne@mail.fhsu.edu</a><br>
+			<a href="https://www.instagram.com/kyle._.lavigne/"><img src="iglogo.png"></a>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* Set background color to white*/
+body {
+	background-color: #F5F5F5;
+}
+/*Remve the header*/
+header {
+	display: none;
+}
+/*remove images*/
+#selfie img {
+	display: none;
+}
+/*remove the code snippets*/
+#code {
+	display: none;
+}
+/*remove the video*/
+iframe {
+	display: none;
+}
+/*remove the scroll selector*/
+.scroll-container {
+	display: none;
+}
+/*set the color in the footer to black*/
+footer {
+	color: black;
+}
+
+footer a {
+	color:black
+}

@@ -1,0 +1,251 @@
+/* Sets the main background image as well as the color and font of text */
+
+body {
+	background: url(matrix.gif)no-repeat center;
+	background-size: cover;
+	color: white;
+	font-family: 'Roboto Mono';
+}
+
+main {
+	padding: .5em;
+}
+
+/* creates the webpage you navigate inside of the body */
+#wrapper { 
+           
+	background-color: black;
+	background-image: linear-gradient(to bottom, #292929, black);  
+	border: 0.5em solid black;
+}  
+
+/* Sets up the header at the top of the page */
+header {
+	background: radial-gradient(#01FE01, #129936);
+	color: black;
+	text-align: center;
+	padding: 1em;
+	font-size: 120%;
+	text-shadow: 2px 2px 5px black;
+}
+
+/* makes the title always the same color */
+header a, a:hover, a:active {
+	text-decoration: none;
+	color: black;
+}
+
+/* Sets up the nav bar */
+nav {
+	margin: 0;
+	padding: 0;
+    text-align: center;
+	background-color: #383838;
+}
+
+/* creates an unordered list and makes it a vertical column for nav */
+nav ul {
+	margin: 0;
+	padding: .5em;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+/* creates the contrasting colors for when you highlight a nav item*/
+nav li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 9px 10px;
+	text-decoration: none;
+}
+
+/* sets drop down hover color*/
+nav li a:hover, .dropdown:hover .dropbtn {
+	background-color: #01FE01;
+	color: black;
+}
+
+/* the dropdown list is a blick inline with the element*/
+nav li.dropdown {
+	display: inline-block;
+}
+
+/*what displays inside that inline block*/
+.dropdown-content {
+	display: none;
+	background-color: darkgray;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/*changing what the links look like*/
+.dropdown-content a {
+	color: black;
+	padding: 9px 10px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+/*changing what they look like when hovered*/
+.dropdown-content a:hover {
+	background-color: black;
+	color: white;
+}
+
+/*sets the list to be added to the block when hovered over*/
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*the label for the selector and all the project files*/
+#selectorHead {
+	text-align: center;
+	background-color: #383838;
+	
+}
+
+/*removes vertical scroll bar, and sets other simple parameters*/
+.scroll-container{
+	overflow-y: hidden;
+	white-space: nowrap;
+	background: transparent;
+	height: 55%;
+}
+
+/*removes the bottom scroll bar visually while still retaining functionality*/
+.scroll-container::-webkit-scrollbar {
+	display: none;
+}
+	
+/*setting the objects to display inline*/
+.gridscroll{
+	display:inline-block;
+}
+
+.gridscroll img {
+	margin-right:1em;
+	width: 45%;
+	height: 45%;
+}
+
+/*setting up the footer*/
+footer {
+	font-size: 75%;
+	text-align: center;
+	font-style: italic;
+	padding: 2em;
+}
+
+footer a{
+	color: #01FE01;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: white;
+}
+
+footer img {
+	max-width: 3%;
+}
+
+#selfie img {
+	max-width: 100%;	
+}
+
+.flow {
+	display: flex;
+	flex-direction: column;
+}
+
+/*sets up the website for devices like tablets*/
+@media (min-width: 600px) {
+			nav {
+				overflow: hidden;
+			}
+			nav ul {
+				flex-direction: row;
+			}
+			.dropdown-content {
+				position: absolute;
+			}
+			
+			form { width: 80%;
+				max-width: 30em;
+				display: grid;
+				grid-template-columns: 6em 1fr;
+				grid-gap: 1em; 
+			}
+			input[type="submit"] {
+				grid-column: 2;
+				width: 9em;
+			}
+}
+
+/*sets up the website for devices like computers*/
+@media (min-width: 1024px) {
+			#wrapper { 
+				margin: auto;
+			    width: 80%;
+			}
+			section { 
+				margin-left: 2em;
+				margin-right: 2em;
+                flex: 1;
+			}	
+			.flow { 
+				flex-direction: row; 
+			}
+			@supports (display: grid)  {
+				  nav ul { flex-direction: row;
+				}
+				  header { grid-area: header; }
+				  nav    { grid-area: nav; }
+				  main   { grid-area: main; }
+				  footer { grid-area: footer; }
+				  #wrapper { display: grid;
+				             grid-template:
+							     "header header"
+								 "nav    nav"
+								 "main   main"
+								 "footer footer"
+								 / 1fr 1fr ;
+				  }
+			}
+}
+
+/*setting up the table*/
+
+table {
+	border: 2px solid white;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 0.5em;
+	border: 2px solid white;
+}
+
+td {
+	text-align: center;
+}
+
+td.text {
+	text-align: left;
+}
+
+thead {
+	background-color: darkgray;
+	color: black;
+}
+
+tr:nth-of-type(even) {
+	background-color: darkgray;
+	color: black;
+}

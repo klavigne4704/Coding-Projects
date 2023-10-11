@@ -1,0 +1,82 @@
+// interface file
+
+#ifndef SHAPE_H
+#define SHAPE_H
+
+#include <string>
+
+using namespace std;
+
+namespace shapekl
+
+{
+    class Shape {
+    public:
+        Shape(); // default constructor
+
+        Shape(string name);
+
+        string getName();  // accessor function
+
+        void setName(string newName); // mutator function
+
+        virtual double getArea() = 0; //implementation determined at runtime
+
+    private:
+        string name;
+    };
+
+    class Circle : public Shape {
+    public:
+        Circle();
+        Circle(double theRadius);
+        // sets radius to theRadius, sets name to circle
+
+        Circle(string theName, double theRadius);
+        // sets radius to theRadius, sets name to theName
+
+        void setRadius(double newRadius);
+        // mutator for chaning radius value
+
+        double getRadius() const;
+        // accessor for returning radius value
+
+        virtual double getArea();
+        // returns calculated area value
+
+    private:
+        double radius;  // changed to double (from textbook)
+    };
+
+    class Rectangle : public Shape {
+    public:
+        Rectangle();
+        Rectangle(double theHeight, double theWidth);
+        // sets height and width, sets name to rectangle
+
+        Rectangle(string theName, double theHeight, double theWidth);
+        // sets name, height, and width respectively
+
+        void setHeight(double newHeight);
+        // mutator for height value
+
+        void setWidth(double newWidth);
+        // mutator for width value
+
+        double getHeight() const;
+        // accessor for height value
+
+        double getWidth() const;
+        // accessor for width value
+
+        virtual double getArea();
+        // returns calculated area value
+
+    private:
+        double height;
+        double width;
+    };
+
+}
+
+#endif //SHAPE_H
