@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class population here.
+ * A population calculator which calculates the population in i years based on
+	the numbers laid out in the program.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Kyle Lavigne
+ * @version 1
  */
 public class Population
 {

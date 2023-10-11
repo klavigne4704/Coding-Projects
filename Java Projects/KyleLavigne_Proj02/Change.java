@@ -1,6 +1,13 @@
 import java.util.Scanner;
 import java.util.Random;
 
+/*
+* Calculates change in quarters, dimes, nickels, and pennies based on the amount you enter
+*
+*@Kyle Lavigne
+*@version 1
+*/
+
 public class Change
 {
     public static void main(String[] args)

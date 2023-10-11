@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+/*
+* calculates the letter grade based on the percentage score you enter. both if else statements
+	and switch statements are listed.
+*
+*@Kyle Lavigne
+*@version 1
+*
+*/
+
 public class KyleLavigne_Proj03
 {
     public static void main(String[] args)

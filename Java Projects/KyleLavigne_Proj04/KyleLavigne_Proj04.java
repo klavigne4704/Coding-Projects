@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+/*
+* Converts binary numbers to decimal using the built in and custom methods.
+*
+*@Kyle Lavigne
+*@version 1
+*
+*/
+
 public class KyleLavigne_Proj04
 {
     // Custom Logic
